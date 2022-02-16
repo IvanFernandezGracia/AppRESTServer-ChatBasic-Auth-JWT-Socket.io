@@ -3,6 +3,7 @@ const miFormulario = document.querySelector("form");
 const url = window.location.hostname.includes("localhost")
   ? "http://localhost:8080/api/auth/"
   : "https://app-server-chat-jwt-socketio.herokuapp.com/api/auth/";
+console.log(url);
 
 miFormulario.addEventListener("submit", (ev) => {
   ev.preventDefault();
