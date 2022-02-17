@@ -9,7 +9,7 @@ const socketController = async (socket = new Socket(), io) => {
   if (!usuario) {
     return socket.disconnect();
   }
-  console.log("Socket Conectado id", socket.id)
+  console.log("Socket Conectado id", socket.id);
   // Agregar el usuario conectado
   chatMensajes.conectarUsuario(usuario);
   io.emit("usuarios-activos", chatMensajes.usuariosArr);
@@ -25,6 +25,8 @@ const socketController = async (socket = new Socket(), io) => {
   socket.on("disconnect", () => {
     chatMensajes.desconectarUsuario(usuario.id);
     io.emit("usuarios-activos", chatMensajes.usuariosArr);
+
+    console.log("Socket DESConectado id", socket.id);
   });
 
   socket.on("enviar-mensaje", ({ uid, mensaje }) => {
