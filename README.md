@@ -20,26 +20,19 @@ https://user-images.githubusercontent.com/48660555/154388394-18311956-32b7-453f-
     </tr>
         <td>
         <ul>
-          <li>Context</li>
-          <li>Context</li>
-          <li>Context</li>
-          <li>Context</li>
+          <li>Socket io</li>
+          <li>JWT into Socket</li>
+          <li>io</li>
+          <li>socket.id</li>
         </ul>
       </td>    
         <td>
         <ul>
-          <li>Context</li>
-          <li>Context</li>
-          <li>Context</li>
-          <li>Context</li>
-        </ul>
-      </td>
-        <td>
-        <ul>
-          <li>Context</li>
-          <li>Context</li>
-          <li>Context</li>
-          <li>Context</li>
+          <li>Event Socket</li>
+          <li>.emit()</li>
+          <li>.on()</li>
+          <li>Socket io client</li>
+          <li>socket.disconnect()</li>
         </ul>
       </td>
   </tbody>
